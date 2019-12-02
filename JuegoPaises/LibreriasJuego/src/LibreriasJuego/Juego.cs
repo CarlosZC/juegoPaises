@@ -8,7 +8,7 @@ namespace LibreriasJuego
     {
         private static Juego elJuego;
 
-        private Juego() {
+        private Juego() { 
 
         }
 
