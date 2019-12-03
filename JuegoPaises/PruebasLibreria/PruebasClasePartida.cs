@@ -9,7 +9,7 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestCrearPartida()
         {
-            Partida p = new Partida();
+            
 
         }
 
