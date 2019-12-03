@@ -8,8 +8,9 @@ namespace LibreriasJuego
     {
         private static Juego elJuego;
 
-        private Juego() { 
-
+        private Juego() {
+            baseDatosJugadores = null;
+            baseDatosGeografica = null;
         }
 
         // El modificador STATIC está asociado a nivel de la clase
@@ -27,9 +28,9 @@ namespace LibreriasJuego
             return elJuego;
         }
 
-        public BaseDatosJugadores baseDatosJugadores { get; }
+        public IBaseDatosJugadores baseDatosJugadores { get; }
 
-        public BaseDatosGeografica baseDatosGeografica { get; }
+        public IBaseDatosGeografica baseDatosGeografica { get; }
 
     }
 }
