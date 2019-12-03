@@ -17,7 +17,7 @@ namespace LibreriasJuego
         // No hace falta instanciarlo porque es la misma.
         public static Juego dameElJuego()
         {
-            if (elJuego == null)
+            if (elJuego == null)  
             {
                 // llama al método privado de la clase
                 // Solamente entra la primera vez que se llame a esa función
