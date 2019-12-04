@@ -9,16 +9,12 @@ namespace LibreriasJuego
 
         public string nombre { get; }
 
-        public List<IPais> paises { get =>(
-                return X;
-            )
-        }
-
+        public IList<IPais> paises { get => new List<IPais>(this.misPaises.Values).AsReadOnly();}
+        // Debe devolver un tipo IList para que sea de tipo "sólo lectura"
 
         internal Continente(string nombre)
         {
-            this.nombre = nombre;
-            this.paises = new List<IPais>();
+            this.nombre = nombre;            
             this.misPaises = new Dictionary<string, IPais>();
         }
 

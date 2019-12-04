@@ -6,13 +6,13 @@ namespace LibreriasJuego
 {
     public interface IBaseDatosJugadores
     {
+        IList<IJugador> Jugadores { get; }
+
         IJugador nuevoJugador(string nombreJugador);
 
         IJugador getJugador(string nombreJugador);
 
-        IJugador getOrCreateJugador(string nombreJugador);
-
-        List<IJugador> getJugadores();
+        IJugador getOrCreateJugador(string nombreJugador);        
 
     }
 }

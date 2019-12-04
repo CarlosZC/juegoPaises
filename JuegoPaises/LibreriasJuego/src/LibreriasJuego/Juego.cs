@@ -9,7 +9,7 @@ namespace LibreriasJuego
         private static Juego elJuego;
 
         private Juego() {
-            baseDatosJugadores = null;
+            baseDatosJugadores = new BaseDatosJugadoresCutre();
             baseDatosGeografica = null;
         }
 
