@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibreriasJuego;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,16 +19,52 @@ namespace InterfazJuego
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class GameWindow : Window
     {
-        public MainWindow()
+        private IPartida partida;
+        private IPregunta preguntaActual;
+
+        public GameWindow(IPartida partida)
         {
             InitializeComponent();
+            this.partida = partida;
+
+            nuevaPregunta();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void nuevaPregunta()
         {
+            preguntaActual = partida.nuevaPregunta();
+            lbl_Pais.Content = preguntaActual.pais.nombre;
+            txt_Capital.Text = "";
+            lbl_Intentos.Content = preguntaActual.intentosRestantes;
 
+            int total = partida.historicoPreguntas.Count();
+            int aciertos = 0;
+            partida.historicoPreguntas.ForEach(
+                (preguntaActual) => { if (preguntaActual.acierto) aciertos++; }
+            );
+            lbl_Estadistica.Content = "Llevas " + aciertos + " aciertos de " + total + " preguntas";
+        }
+
+        private void Btn_Finalizar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Btn_Probar_Click(object sender, RoutedEventArgs e)
+        {
+            string capitalPropuesta = txt_Capital.Text.Trim();
+            bool acerte = preguntaActual.proponerRespuesta(capitalPropuesta);
+
+            if (acerte || preguntaActual.intentosRestantes == 0)
+                nuevaPregunta();
+            else
+            {
+                txt_Capital.Text = "";
+                lbl_Intentos.Content = preguntaActual.intentosRestantes;
+
+            }
         }
     }
 }
