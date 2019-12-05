@@ -71,6 +71,7 @@ namespace PruebasLibreria
             pregunta.proponerRespuesta("Ruina");
 
             // Deben quedar cero intentos
+            intentos = pregunta.intentosRestantes;
             Assert.AreEqual(intentos, 0);
 
             // Intenta dar una respuesta más allá del límite

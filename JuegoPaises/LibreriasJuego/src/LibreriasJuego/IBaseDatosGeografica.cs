@@ -6,13 +6,11 @@ namespace LibreriasJuego
 {
     public interface IBaseDatosGeografica
     {
-        List<IContinente> getContinentes();
+        IList<IContinente> getContinentes();
 
         IContinente getContinente(string nombreContinente);
 
         IPais getPais(string nombrePais);
-
-        List<IPais> getPaises();
 
     }
 }

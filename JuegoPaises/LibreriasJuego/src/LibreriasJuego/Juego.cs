@@ -10,7 +10,7 @@ namespace LibreriasJuego
 
         private Juego() {
             baseDatosJugadores = new BaseDatosJugadoresCutre();
-            baseDatosGeografica = null;
+            baseDatosGeografica = new BaseDatosGeografica();
         }
 
         // El modificador STATIC está asociado a nivel de la clase

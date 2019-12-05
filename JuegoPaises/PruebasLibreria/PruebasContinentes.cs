@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using LibreriasJuego;
+using System.Collections.Generic;
 
 namespace PruebasLibreria
 {
@@ -13,7 +14,7 @@ namespace PruebasLibreria
             IBaseDatosGeografica miBaseDatosGeografica = Juego.dameElJuego().baseDatosGeografica;
             IContinente europa = miBaseDatosGeografica.getContinente("Europa");
 
-            Assert.Equals(europa.nombre, "Europa");
+            Assert.AreEqual(europa.nombre, "Europa");
         }
 
         [TestMethod]
@@ -40,9 +41,21 @@ namespace PruebasLibreria
         {
             IBaseDatosGeografica miBaseDatosGeografica = Juego.dameElJuego().baseDatosGeografica;
             IContinente europa = miBaseDatosGeografica.getContinente("Europa");
-            IPais nuevaZelanda = europa.getPais("Nueva Zelanda");
+            
+            Assert.ThrowsException<KeyNotFoundException>(()=>europa.getPais("Nueva Zelanda"));
 
-            Assert.IsNull(nuevaZelanda);
+        /* La llamada del Assert con una función lambda se podría cambiar por lo siguiente
+         * Action funcionALaQueTengoQueLlamar = recuperarNuevaZelanda;
+         * 
+         * Assert.ThrowsException<KeyNotFoundException>(funcionALaQueTengoQueLlamar);
+         * 
+         * 
+         * void recuperarNuevaZelanda() {
+         * esta función busca en el diccionario, hace lo que sea y finalmente lanza una excepción 
+         * porque no existe el país Nueva Zelanda en Europa
+         * throw new Exception ("Nueva Zelanda no existe");
+         * 
+         */
         }
 
     }
