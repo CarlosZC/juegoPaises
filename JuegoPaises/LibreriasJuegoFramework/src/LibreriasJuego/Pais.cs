@@ -12,7 +12,7 @@ namespace LibreriasJuego
 
         public IContinente continente { get; }
 
-        internal Pais (IContinente continente, string nombre, string capital)
+        public Pais (IContinente continente, string nombre, string capital)
         {
             this.continente = continente;
             this.nombre = nombre;

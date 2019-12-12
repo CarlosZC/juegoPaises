@@ -10,7 +10,7 @@ namespace LibreriasJuego
 
         public IList<IJugador> Jugadores {get => new List<IJugador>(this.misJugadores.Values).AsReadOnly(); }
 
-        internal BaseDatosJugadoresCutre()
+        public BaseDatosJugadoresCutre()
         {
             this.misJugadores = new Dictionary<string, IJugador>();
         }

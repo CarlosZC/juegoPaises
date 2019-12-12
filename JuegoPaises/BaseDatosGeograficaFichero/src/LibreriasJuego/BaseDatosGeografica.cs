@@ -11,7 +11,7 @@ namespace LibreriasJuego
         private Dictionary<string, IPais> paises;
         private Dictionary<string, IContinente> continentes;
 
-        internal BaseDatosGeografica() {
+        public BaseDatosGeografica() {
 
             this.paises = new Dictionary<string, IPais>();
             this.continentes = new Dictionary<string, IContinente>();

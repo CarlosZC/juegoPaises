@@ -70,6 +70,7 @@
     <Compile Include="GameWindow.xaml.cs">
       <DependentUpon>GameWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Juego.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -102,9 +103,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LibreriasJuegoFramework\LibreriasJuegoFramework.csproj">
+    <ProjectReference Include="..\BaseDatosGeograficaFichero\BaseDatosGeograficaFichero.csproj">
+      <Project>{f0c9910e-6807-49f0-a093-b170ba395cc0}</Project>
+      <Name>BaseDatosGeograficaFichero</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BaseDatosJugadoresFichero\BaseDatosJugadoresFichero.csproj">
+      <Project>{0c611a65-4ec4-4bb7-9fd2-a439808bc929}</Project>
+      <Name>BaseDatosJugadoresFichero</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InterfazLibreria\InterfazLibreria.csproj">
+      <Project>{74c5bd01-c15b-431d-8507-1d3a13873282}</Project>
+      <Name>InterfazLibreria</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibreriasJuegoFramework\LibreriasJuego.csproj">
       <Project>{2238be17-125d-41e1-a2a9-e3e0513aa223}</Project>
-      <Name>LibreriasJuegoFramework</Name>
+      <Name>LibreriasJuego</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

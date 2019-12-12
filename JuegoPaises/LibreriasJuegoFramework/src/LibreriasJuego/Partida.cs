@@ -18,7 +18,7 @@ namespace LibreriasJuego
         #endregion Atributos 
 
         #region métodos
-        internal Partida(IJugador jugador, IContinente continente)
+        public Partida(IJugador jugador, IContinente continente)
         // El modificador INTERNAL solamente puede ser llamado desde la misma compilación (esté dentro de la misma dll)
         {
             this.jugador = jugador;

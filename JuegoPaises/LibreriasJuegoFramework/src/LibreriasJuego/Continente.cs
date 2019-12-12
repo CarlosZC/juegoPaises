@@ -12,13 +12,13 @@ namespace LibreriasJuego
         public IList<IPais> paises { get => new List<IPais>(this.misPaises.Values).AsReadOnly();}
         // Debe devolver un tipo IList para que sea de tipo "sólo lectura"
 
-        internal Continente(string nombre)
+        public Continente(string nombre)
         {
             this.nombre = nombre;            
             this.misPaises = new Dictionary<string, IPais>();
         }
 
-        internal void asignarPais(IPais nuevoPais)
+        public void asignarPais(IPais nuevoPais)
         {
             this.misPaises.Add(nuevoPais.nombre, nuevoPais);
         }

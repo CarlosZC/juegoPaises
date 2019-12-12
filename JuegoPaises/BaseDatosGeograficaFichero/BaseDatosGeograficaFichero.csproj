@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2238BE17-125D-41E1-A2A9-E3E0513AA223}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>LibreriasJuegoFramework</RootNamespace>
-    <AssemblyName>LibreriasJuegoFramework</AssemblyName>
+    <ProjectGuid>{F0C9910E-6807-49F0-A093-B170BA395CC0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BaseDatosGeograficaFichero</RootNamespace>
+    <AssemblyName>BaseDatosGeograficaFichero</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -45,24 +43,6 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\LibreriasJuego\BaseDatosGeografica.cs" />
-    <Compile Include="src\LibreriasJuego\BaseDatosJugadoresCutre.cs" />
-    <Compile Include="src\LibreriasJuego\Continente.cs" />
-    <Compile Include="src\LibreriasJuego\Dummy.cs" />
-    <Compile Include="src\LibreriasJuego\IBaseDatosGeografica.cs" />
-    <Compile Include="src\LibreriasJuego\IBaseDatosJugadores.cs" />
-    <Compile Include="src\LibreriasJuego\IContinente.cs" />
-    <Compile Include="src\LibreriasJuego\IJugador.cs" />
-    <Compile Include="src\LibreriasJuego\IPais.cs" />
-    <Compile Include="src\LibreriasJuego\IPartida.cs" />
-    <Compile Include="src\LibreriasJuego\IPregunta.cs" />
-    <Compile Include="src\LibreriasJuego\Juego.cs" />
-    <Compile Include="src\LibreriasJuego\Jugador.cs" />
-    <Compile Include="src\LibreriasJuego\Pais.cs" />
-    <Compile Include="src\LibreriasJuego\Partida.cs" />
-    <Compile Include="src\LibreriasJuego\Pregunta.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="continentes\Africa.txt">
@@ -80,6 +60,16 @@
     <Content Include="continentes\Oceania.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InterfazLibreria\InterfazLibreria.csproj">
+      <Project>{74c5bd01-c15b-431d-8507-1d3a13873282}</Project>
+      <Name>InterfazLibreria</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibreriasJuegoFramework\LibreriasJuego.csproj">
+      <Project>{2238be17-125d-41e1-a2a9-e3e0513aa223}</Project>
+      <Name>LibreriasJuego</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

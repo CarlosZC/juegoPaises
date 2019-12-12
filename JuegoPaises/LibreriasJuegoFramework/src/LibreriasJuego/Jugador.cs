@@ -11,7 +11,7 @@ namespace LibreriasJuego
         public List<IPartida> historicoPartidas { get; }
 
 
-        internal Jugador(string nombre)
+        public Jugador(string nombre)
         {
             this.nombre = nombre;
             this.historicoPartidas = new List<IPartida>();

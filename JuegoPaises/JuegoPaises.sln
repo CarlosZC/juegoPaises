@@ -3,16 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibreriasJuegoCore", "LibreriasJuego\LibreriasJuegoCore.csproj", "{167FA669-0EA1-4552-8C01-380446B5E221}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebasLibreria", "PruebasLibreria\PruebasLibreria.csproj", "{BF43E989-4B11-4DFC-BBF1-98BB152B4B06}"
-	ProjectSection(ProjectDependencies) = postProject
-		{167FA669-0EA1-4552-8C01-380446B5E221} = {167FA669-0EA1-4552-8C01-380446B5E221}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfazJuego", "InterfazJuego\InterfazJuego.csproj", "{92B99268-D740-49F2-9193-BEC76B9C4975}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriasJuegoFramework", "LibreriasJuegoFramework\LibreriasJuegoFramework.csproj", "{2238BE17-125D-41E1-A2A9-E3E0513AA223}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriasJuego", "LibreriasJuegoFramework\LibreriasJuego.csproj", "{2238BE17-125D-41E1-A2A9-E3E0513AA223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfazLibreria", "InterfazLibreria\InterfazLibreria.csproj", "{74C5BD01-C15B-431D-8507-1D3A13873282}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseDatosJugadoresFichero", "BaseDatosJugadoresFichero\BaseDatosJugadoresFichero.csproj", "{0C611A65-4EC4-4BB7-9FD2-A439808BC929}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseDatosGeograficaFichero", "BaseDatosGeograficaFichero\BaseDatosGeograficaFichero.csproj", "{F0C9910E-6807-49F0-A093-B170BA395CC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{167FA669-0EA1-4552-8C01-380446B5E221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{167FA669-0EA1-4552-8C01-380446B5E221}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{167FA669-0EA1-4552-8C01-380446B5E221}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{167FA669-0EA1-4552-8C01-380446B5E221}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BF43E989-4B11-4DFC-BBF1-98BB152B4B06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BF43E989-4B11-4DFC-BBF1-98BB152B4B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF43E989-4B11-4DFC-BBF1-98BB152B4B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,6 +33,18 @@ Global
 		{2238BE17-125D-41E1-A2A9-E3E0513AA223}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2238BE17-125D-41E1-A2A9-E3E0513AA223}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2238BE17-125D-41E1-A2A9-E3E0513AA223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C5BD01-C15B-431D-8507-1D3A13873282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C5BD01-C15B-431D-8507-1D3A13873282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C5BD01-C15B-431D-8507-1D3A13873282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C5BD01-C15B-431D-8507-1D3A13873282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C611A65-4EC4-4BB7-9FD2-A439808BC929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C611A65-4EC4-4BB7-9FD2-A439808BC929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C611A65-4EC4-4BB7-9FD2-A439808BC929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C611A65-4EC4-4BB7-9FD2-A439808BC929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0C9910E-6807-49F0-A093-B170BA395CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0C9910E-6807-49F0-A093-B170BA395CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0C9910E-6807-49F0-A093-B170BA395CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0C9910E-6807-49F0-A093-B170BA395CC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
