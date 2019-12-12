@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3e0cf390-0530-4e31-9863-8b6ba0c617c3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2241/MiServicioWeb.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MiServicioWeb.disco" MetadataType="Disco" ID="65cdb58e-c86d-4143-9f6e-67e8f79603cc" SourceId="1" SourceUrl="http://localhost:2241/MiServicioWeb.svc?disco" />
+    <MetadataFile FileName="MiServicioWeb2.xsd" MetadataType="Schema" ID="223f6b37-aee6-4537-8038-45d76244f019" SourceId="1" SourceUrl="http://localhost:2241/MiServicioWeb.svc?xsd=xsd2" />
+    <MetadataFile FileName="MiServicioWeb.xsd" MetadataType="Schema" ID="571902cf-1940-4c3c-91e4-6526dd806db3" SourceId="1" SourceUrl="http://localhost:2241/MiServicioWeb.svc?xsd=xsd1" />
+    <MetadataFile FileName="MiServicioWeb1.xsd" MetadataType="Schema" ID="4699fa75-635d-4f21-bccb-66a586db8e9d" SourceId="1" SourceUrl="http://localhost:2241/MiServicioWeb.svc?xsd=xsd0" />
+    <MetadataFile FileName="MiServicioWeb.wsdl" MetadataType="Wsdl" ID="8f976002-3dbf-41ae-8b2d-6324ce2eecf9" SourceId="1" SourceUrl="http://localhost:2241/MiServicioWeb.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
